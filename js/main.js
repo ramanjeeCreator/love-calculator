@@ -12,6 +12,12 @@ function generate() {
         alert("You ave missed any box...");
     } else if (currentValue1 == previousValue1) {
         alert("You haven't changed the value.");
+    } else if (first.toLowerCase().includes("vinayak") && last.toLowerCase().includes("sifa")) {
+        write.value = `100%`;
+    } else if (first.toLowerCase().includes("vinayak") && !last.toLowerCase().includes("sifa")) {
+        write.value = `0%`;
+    } else if (!first.toLowerCase().includes("vinayak") && last.toLowerCase().includes("sifa")) {
+        write.value = `0%`;
     } else if (first.toLowerCase().includes("krish") && last.toLowerCase().includes("riya")) {
         write.value = `100%`;
     } else if (first.toLowerCase().includes("krish") && !last.toLowerCase().includes("riya")) {
