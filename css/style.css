@@ -73,6 +73,7 @@ body>div>div:nth-child(3) {
     align-items: center;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 button {
