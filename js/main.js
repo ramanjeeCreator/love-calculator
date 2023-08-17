@@ -11,6 +11,8 @@ function generate() {
         // let currentValue = first.value;
         if (currentValue1 == previousValue1) {
             alert("You haven't changed the value.");
+        } else if (!isNaN(first) || !isNaN(last)) {
+            alert('Number characters are not allowed')
         } else if (first.toLowerCase().includes("ram") && last.toLowerCase().includes("sita")) {
             write.value = `100%`;
         } else if (first.toLowerCase().includes("krishn") && last.toLowerCase().includes("radha")) {
