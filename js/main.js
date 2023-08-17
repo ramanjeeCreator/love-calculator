@@ -12,10 +12,20 @@ function generate() {
         alert("You ave missed any box...");
     } else if (currentValue1 == previousValue1) {
         alert("You haven't changed the value.");
+    } else if (first.toLowerCase().includes("krish") && last.toLowerCase().includes("riya")) {
+        write.value = `100%`;
+    } else if (first.toLowerCase().includes("krish") && !last.toLowerCase().includes("riya")) {
+        write.value = `0%`;
+    } else if (!first.toLowerCase().includes("krish") && last.toLowerCase().includes("riya")) {
+        write.value = `0%`;
+    } else if (first.toLowerCase().includes("vikalp") && last.toLowerCase().includes("harshita")) {
+        write.value = `100%`;
     } else if (first.toLowerCase().includes("vikalp") && !last.toLowerCase().includes("harshita")) {
         write.value = `0%`;
     } else if (!first.toLowerCase().includes("vikalp") && last.toLowerCase().includes("harshita")) {
         write.value = `0%`;
+    } else if (first.toLowerCase().includes("raman") || last.toLowerCase().includes("raman")) {
+        alert(`Sorry, You are trying with my name, that i don't want!`)
     } else {
         click.style.transform = 'translate(10px, 10px)'
         setTimeout(() => {
