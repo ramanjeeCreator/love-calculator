@@ -30,13 +30,13 @@ function generate() {
             write.value = `0%`;
         } else if (!first.toLowerCase().includes("krish") && last.toLowerCase().includes("riya")) {
             write.value = `0%`;
-        } else if (first.toLowerCase().includes("vikalp") && last.toLowerCase().includes("harshita")) {
+        }/* else if (first.toLowerCase().includes("vikalp") && last.toLowerCase().includes("harshita")) {
             write.value = `100%`;
         } else if (first.toLowerCase().includes("vikalp") && !last.toLowerCase().includes("harshita")) {
             write.value = `0%`;
         } else if (!first.toLowerCase().includes("vikalp") && last.toLowerCase().includes("harshita")) {
             write.value = `0%`;
-        } else if (first.toLowerCase().includes("raman") || last.toLowerCase().includes("raman")) {
+        }*/ else if (first.toLowerCase().includes("raman") || last.toLowerCase().includes("raman")) {
             alert(`Sorry guys, You are trying with my name, that i don't want!`);
             first.value = "";
             last.value = "";
