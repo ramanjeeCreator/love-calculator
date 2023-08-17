@@ -36,7 +36,10 @@ function generate() {
         } else if (!first.toLowerCase().includes("vikalp") && last.toLowerCase().includes("harshita")) {
             write.value = `0%`;
         } else if (first.toLowerCase().includes("raman") || last.toLowerCase().includes("raman")) {
-            alert(`Sorry guys, You are trying with my name, that i don't want!`)
+            alert(`Sorry guys, You are trying with my name, that i don't want!`);
+            first.value = "";
+            last.value = "";
+            write.value = "sorry"
         } else {
             click.style.transform = 'translate(10px, 10px)'
             setTimeout(() => {
