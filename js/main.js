@@ -9,9 +9,7 @@ function generate() {
     if (first.length > 3 && last.length > 3) {
         let currentValue1 = first;
         // let currentValue = first.value;
-        if (first == '' || last == '') {
-            alert("You ave missed any box...");
-        } else if (currentValue1 == previousValue1) {
+        if (currentValue1 == previousValue1) {
             alert("You haven't changed the value.");
         } else if (first.toLowerCase().includes("ram") && last.toLowerCase().includes("sita")) {
             write.value = `100%`;
