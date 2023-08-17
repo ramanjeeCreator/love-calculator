@@ -13,6 +13,7 @@ function generate() {
             alert("You haven't changed the value.");
         } else if (!/^[a-zA-Z]*$/.test(first) || !/^[a-zA-Z]*$/.test(last)) {
             alert('These characters are not allowed!');
+            write.value = "sorry"
         } else if (first.toLowerCase().includes("krishn") && last.toLowerCase().includes("radha")) {
             write.value = `100%`;
         } else if (first.toLowerCase().includes("krishna") && last.toLowerCase().includes("radha")) {
