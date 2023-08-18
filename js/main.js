@@ -25,11 +25,21 @@ function generate() {
             write.value = `100%`;
         } else if (first.toLowerCase().includes("krishna") && last.toLowerCase().includes("radha")) {
             write.value = `100%`;
+        } else if (first.toLowerCase().includes("radha") && last.toLowerCase().includes("krishn")) {
+            write.value = `100%`;
+        } else if (first.toLowerCase().includes("radha") && last.toLowerCase().includes("krishna")) {
+            write.value = `100%`;
         } else if (first.toLowerCase().includes("vinayak") && last.toLowerCase().includes("sifa")) {
             write.value = `100%`;
         } else if (first.toLowerCase().includes("vinayak") && !last.toLowerCase().includes("sifa")) {
             write.value = `0%`;
         } else if (!first.toLowerCase().includes("vinayak") && last.toLowerCase().includes("sifa")) {
+            write.value = `0%`;
+        } else if (first.toLowerCase().includes("sifa") && last.toLowerCase().includes("vinayak")) {
+            write.value = `100%`;
+        } else if (first.toLowerCase().includes("sifa") && !last.toLowerCase().includes("vinayak")) {
+            write.value = `0%`;
+        } else if (!first.toLowerCase().includes("sifa") && last.toLowerCase().includes("vinayak")) {
             write.value = `0%`;
         } else if (first.toLowerCase().includes("krish") && last.toLowerCase().includes("riya")) {
             write.value = `100%`;
@@ -37,11 +47,47 @@ function generate() {
             write.value = `0%`;
         } else if (!first.toLowerCase().includes("krish") && last.toLowerCase().includes("riya")) {
             write.value = `0%`;
+        } else if (first.toLowerCase().includes("riya") && last.toLowerCase().includes("krish")) {
+            write.value = `100%`;
+        } else if (first.toLowerCase().includes("riya") && !last.toLowerCase().includes("krish")) {
+            write.value = `0%`;
+        } else if (!first.toLowerCase().includes("riya") && last.toLowerCase().includes("krish")) {
+            write.value = `0%`;
         } else if (first.toLowerCase().includes("vikalp") && last.toLowerCase().includes("harshita")) {
             write.value = `100%`;
         } else if (first.toLowerCase().includes("vikalp") && !last.toLowerCase().includes("harshita")) {
             write.value = `0%`;
         } else if (!first.toLowerCase().includes("vikalp") && last.toLowerCase().includes("harshita")) {
+            write.value = `0%`;
+        } else if (first.toLowerCase().includes("harshita") && last.toLowerCase().includes("vikalp")) {
+            write.value = `100%`;
+        } else if (first.toLowerCase().includes("harshita") && !last.toLowerCase().includes("vikalp")) {
+            write.value = `0%`;
+        } else if (!first.toLowerCase().includes("harshita") && last.toLowerCase().includes("vikalp")) {
+            write.value = `0%`;
+        } else if (first.toLowerCase().includes("shailesh") && last.toLowerCase().includes("anamika")) {
+            write.value = `100%`;
+        } else if (first.toLowerCase().includes("shailesh") && !last.toLowerCase().includes("anamika")) {
+            write.value = `0%`;
+        } else if (!first.toLowerCase().includes("shailesh") && last.toLowerCase().includes("anamika")) {
+            write.value = `0%`;
+        } else if (first.toLowerCase().includes("anamika") && last.toLowerCase().includes("shailesh")) {
+            write.value = `100%`;
+        } else if (first.toLowerCase().includes("anamika") && !last.toLowerCase().includes("shailesh")) {
+            write.value = `0%`;
+        } else if (!first.toLowerCase().includes("anamika") && last.toLowerCase().includes("shailesh")) {
+            write.value = `0%`;
+        } else if (first.toLowerCase().includes("shubham") && last.toLowerCase().includes("ikchha")) {
+            write.value = `100%`;
+        } else if (first.toLowerCase().includes("shubham") && !last.toLowerCase().includes("ikchha")) {
+            write.value = `0%`;
+        } else if (!first.toLowerCase().includes("shubham") && last.toLowerCase().includes("ikchha")) {
+            write.value = `0%`;
+        } else if (first.toLowerCase().includes("ikchha") && last.toLowerCase().includes("shubham")) {
+            write.value = `100%`;
+        } else if (first.toLowerCase().includes("ikchha") && !last.toLowerCase().includes("shubham")) {
+            write.value = `0%`;
+        } else if (!first.toLowerCase().includes("ikchha") && last.toLowerCase().includes("shubham")) {
             write.value = `0%`;
         } else if (first.toLowerCase().includes("raman") || last.toLowerCase().includes("raman")) {
             changeDiv.style.color = colorDiv;
