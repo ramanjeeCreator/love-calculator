@@ -41,6 +41,31 @@ function generate() {
             first.value = "";
             last.value = "";
             write.value = "sorry"
+        } else if (first.toLowerCase().includes("shwet") || last.toLowerCase().includes("shwet")) {
+            alert(`Sorry guys, This name you can't use!`);
+            first.value = "";
+            last.value = "";
+            write.value = "sorry"
+        } else if (first.toLowerCase().includes("rinki") || last.toLowerCase().includes("rinki")) {
+            alert(`Sorry guys, This name you can't use!`);
+            first.value = "";
+            last.value = "";
+            write.value = "sorry"
+        } else if (first.toLowerCase().includes("pinki") || last.toLowerCase().includes("pinki")) {
+            alert(`Sorry guys, This name you can't use!`);
+            first.value = "";
+            last.value = "";
+            write.value = "sorry"
+        } else if (first.toLowerCase().includes("ragni") || last.toLowerCase().includes("ragni")) {
+            alert(`Sorry guys, This name you can't use!`);
+            first.value = "";
+            last.value = "";
+            write.value = "sorry"
+        } else if (first.toLowerCase().includes("ragini") || last.toLowerCase().includes("ragini")) {
+            alert(`Sorry guys, This name you can't use!`);
+            first.value = "";
+            last.value = "";
+            write.value = "sorry"
         } else {
             click.style.transform = 'translate(10px, 10px)'
             setTimeout(() => {
