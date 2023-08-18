@@ -93,32 +93,32 @@ function generate() {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            execute("Sorry guys, You are trying with my name, that i don't want!");
+            execute("Website don't allows you to use this name!");
         } else if (first.toLowerCase().includes("shwet") || last.toLowerCase().includes("shwet")) {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            execute("Sorry guys, This name you can't use!");
+            execute("Website don't allows you to use this name!");
         } else if (first.toLowerCase().includes("rinki") || last.toLowerCase().includes("rinki")) {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            execute("Sorry guys, This name you can't use!");
+            execute("Website don't allows you to use this name!");
         } else if (first.toLowerCase().includes("pinki") || last.toLowerCase().includes("pinki")) {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            execute("Sorry guys, This name you can't use!");
+            execute("Website don't allows you to use this name!");
         } else if (first.toLowerCase().includes("ragni") || last.toLowerCase().includes("ragni")) {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            execute("Sorry guys, This name you can't use!");
+            execute("Website don't allows you to use this name!");
         } else if (first.toLowerCase().includes("ragini") || last.toLowerCase().includes("ragini")) {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            execute("Sorry guys, This name you can't use!");
+            execute("Website don't allows you to use this name!");
         } else {
             click.style.transform = 'translate(10px, 10px)'
             setTimeout(() => {
