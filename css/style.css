@@ -10,11 +10,9 @@ body {
     align-items: center;
     justify-content: center;
     background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm70RmvzbZXoX83qZ8WaJtm73xWzR1g6ZSX1CC0XOCxz-bcWCrXaevCJ8Qiy2On9H5Z6Y&usqp=CAU');
-    /* delete */
-    /* background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center; */
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
 }
 
 body>div {
