@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=`, initial-scale=1.0">
@@ -12,13 +13,15 @@
     <div>
         <div id="first-div">Love Calculator</div>
         <div>
-            <div>
-                <input type="text" name="first" id="first-name" placeholder="Your Name">
-                <span id="emoji">❤</span>
-                <input type="text" name="last" id="last-name" placeholder="Love Name">
-            </div>
-            <button id="click" onclick="generate()">Check!</button>
-            <input type="text" name="generate" id="generate" value="Nothing!" disabled>
+            <form netlify>
+                <div>
+                    <input type="text" name="first" id="first-name" placeholder="Your Name">
+                    <span id="emoji">❤</span>
+                    <input type="text" name="last" id="last-name" placeholder="Love Name">
+                </div>
+                <button id="click" onclick="generate()" type="submit">Check!</button>
+                <input type="text" name="generate" id="generate" value="Nothing!" disabled>
+            </form>
         </div>
         <div>May your bond be strengthened by the grace of Bhagwan.</div>
     </div>
