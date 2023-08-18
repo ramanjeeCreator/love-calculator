@@ -3,8 +3,8 @@ let previousValue1 = "";
 
 function generate() {
     let first = document.getElementById('first-name').value;
-    let write = document.getElementById('generate');
     let last = document.getElementById('last-name').value;
+    let write = document.getElementById('generate');
     var changeDiv = document.getElementById('first-div');
     var colorDiv = "greenyellow";
 
@@ -15,32 +15,12 @@ function generate() {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            setTimeout(() => {
-                changeDiv.innerHTML = "You haven't changed the value.";
-                document.getElementById('first-name').value = "";
-                document.getElementById('last-name').value = "";
-                setTimeout(() => {
-                    changeDiv.style.color = "white";
-                    changeDiv.style.fontSize = "3vw";
-                    changeDiv.innerHTML = "Love Calculator";
-                }, 3000);
-            }, 700);
-            write.value = "sorry";
+            execute("You haven't changed the value.");
         } else if (!/^[a-zA-Z]*$/.test(first) || !/^[a-zA-Z]*$/.test(last)) {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            setTimeout(() => {
-                changeDiv.innerHTML = "Spaces and other characters are not allowed!";
-                document.getElementById('first-name').value = "";
-                document.getElementById('last-name').value = "";
-                setTimeout(() => {
-                    changeDiv.style.color = "white";
-                    changeDiv.style.fontSize = "3vw";
-                    changeDiv.innerHTML = "Love Calculator";
-                }, 3000);
-            }, 700);
-            write.value = "sorry";
+            execute("Spaces and other characters are not allowed!");
         } else if (first.toLowerCase().includes("krishn") && last.toLowerCase().includes("radha")) {
             write.value = `100%`;
         } else if (first.toLowerCase().includes("krishna") && last.toLowerCase().includes("radha")) {
@@ -67,92 +47,32 @@ function generate() {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            setTimeout(() => {
-                changeDiv.innerHTML = "Sorry guys, You are trying with my name, that i don't want!";
-                document.getElementById('first-name').value = "";
-                document.getElementById('last-name').value = "";
-                setTimeout(() => {
-                    changeDiv.style.color = "white";
-                    changeDiv.style.fontSize = "3vw";
-                    changeDiv.innerHTML = "Love Calculator";
-                }, 3000);
-            }, 700);
-            write.value = "sorry"
+            execute("Sorry guys, You are trying with my name, that i don't want!");
         } else if (first.toLowerCase().includes("shwet") || last.toLowerCase().includes("shwet")) {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            setTimeout(() => {
-                changeDiv.innerHTML = "Sorry guys, This name you can't use!";
-                document.getElementById('first-name').value = "";
-                document.getElementById('last-name').value = "";
-                setTimeout(() => {
-                    changeDiv.style.color = "white";
-                    changeDiv.style.fontSize = "3vw";
-                    changeDiv.innerHTML = "Love Calculator";
-                }, 3000);
-            }, 700);
-            write.value = "sorry"
+            execute("Sorry guys, This name you can't use!");
         } else if (first.toLowerCase().includes("rinki") || last.toLowerCase().includes("rinki")) {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            setTimeout(() => {
-                changeDiv.innerHTML = "Sorry guys, This name you can't use!";
-                document.getElementById('first-name').value = "";
-                document.getElementById('last-name').value = "";
-                setTimeout(() => {
-                    changeDiv.style.color = "white";
-                    changeDiv.style.fontSize = "3vw";
-                    changeDiv.innerHTML = "Love Calculator";
-                }, 3000);
-            }, 700);
-            write.value = "sorry"
+            execute("Sorry guys, This name you can't use!");
         } else if (first.toLowerCase().includes("pinki") || last.toLowerCase().includes("pinki")) {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            setTimeout(() => {
-                changeDiv.innerHTML = "Sorry guys, This name you can't use!";
-                document.getElementById('first-name').value = "";
-                document.getElementById('last-name').value = "";
-                setTimeout(() => {
-                    changeDiv.style.color = "white";
-                    changeDiv.style.fontSize = "3vw";
-                    changeDiv.innerHTML = "Love Calculator";
-                }, 3000);
-            }, 700);
-            write.value = "sorry"
+            execute("Sorry guys, This name you can't use!");
         } else if (first.toLowerCase().includes("ragni") || last.toLowerCase().includes("ragni")) {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            setTimeout(() => {
-                changeDiv.innerHTML = "Sorry guys, This name you can't use!";
-                document.getElementById('first-name').value = "";
-                document.getElementById('last-name').value = "";
-                setTimeout(() => {
-                    changeDiv.style.color = "white";
-                    changeDiv.style.fontSize = "3vw";
-                    changeDiv.innerHTML = "Love Calculator";
-                }, 3000);
-            }, 700);
-            write.value = "sorry"
+            execute("Sorry guys, This name you can't use!");
         } else if (first.toLowerCase().includes("ragini") || last.toLowerCase().includes("ragini")) {
             changeDiv.style.color = colorDiv;
             changeDiv.style.fontSize = "larger";
             changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-            setTimeout(() => {
-                changeDiv.innerHTML = "Sorry guys, This name you can't use!";
-                document.getElementById('first-name').value = "";
-                document.getElementById('last-name').value = "";
-                setTimeout(() => {
-                    changeDiv.style.color = "white";
-                    changeDiv.style.fontSize = "3vw";
-                    changeDiv.innerHTML = "Love Calculator";
-                }, 3000);
-            }, 700);
-            write.value = "sorry"
+            execute("Sorry guys, This name you can't use!");
         } else {
             click.style.transform = 'translate(10px, 10px)'
             setTimeout(() => {
@@ -166,17 +86,23 @@ function generate() {
         changeDiv.style.color = colorDiv;
         changeDiv.style.fontSize = "larger";
         changeDiv.style.transition = "color 1s ease-in-out, font-size 1s ease-in-out"
-        setTimeout(() => {
-            changeDiv.innerHTML = "Name value must be less than 3";
-            document.getElementById('first-name').value = "";
-            document.getElementById('last-name').value = "";
-            setTimeout(() => {
-                changeDiv.style.color = "white";
-                changeDiv.style.fontSize = "3vw";
-                changeDiv.innerHTML = "Love Calculator";
-            }, 3000);
-        }, 700);
-        write.value = "sorry";
+        execute("Name value must be less than 3");
     }
+}
 
+function execute(text) {
+    let write = document.getElementById('generate');
+    let changeDiv = document.getElementById('first-div');
+    let colorDiv = "greenyellow";
+    setTimeout(() => {
+        changeDiv.innerHTML = text;
+        document.getElementById('first-name').value = "";
+        document.getElementById('last-name').value = "";
+        setTimeout(() => {
+            changeDiv.style.color = "white";
+            changeDiv.style.fontSize = "3vw";
+            changeDiv.innerHTML = "Love Calculator";
+        }, 3000);
+    }, 700);
+    write.value = "sorry";
 }
