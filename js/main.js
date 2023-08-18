@@ -2,7 +2,6 @@ console.log("Raman is live!");
 let previousValue1 = "";
 
 function generate() {
-    event.preventDefault();
     let first = document.getElementById('first-name').value;
     let last = document.getElementById('last-name').value;
     let write = document.getElementById('generate');
