@@ -13,18 +13,46 @@
     <div>
         <div id="first-div">Love Calculator</div>
         <div>
-                <div>
-                    <input type="text" name="first" id="first-name" placeholder="Your Name">
-                    <span id="emoji">❤</span>
-                    <input type="text" name="last" id="last-name" placeholder="Love Name">
-                </div>
-                <button id="click" onclick="generate()">Check!</button>
-                <input type="text" name="generate" id="generate" value="Nothing!" disabled>
+            <div>
+                <input type="text" name="first" id="first-name" placeholder="Your Name">
+                <span id="emoji">❤</span>
+                <input type="text" name="last" id="last-name" placeholder="Love Name">
+            </div>
+            <button id="click" onclick="generate()">Check!</button>
+            <input type="text" name="generate" id="generate" value="Nothing!" disabled>
         </div>
         <div>May your bond be strengthened by the grace of Bhagwan.</div>
     </div>
 
     <script src="./js/main.js"></script>
+    <script>
+        const currentDate = new Date();
+        const mainDate = `${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}, ${currentDate.getHours()}:${currentDate.getMinutes()}`;
+
+        document.getElementById("saveButton").addEventListener("click", function () {
+            const input1Value = document.getElementById("first-name").value;
+            const input2Value = document.getElementById("last-name").value;
+
+            const data = {
+                input1: input1Value,
+                input2: input2Value,
+                timestamp: mainDate,
+            };
+
+            fetch("/.netlify/functions/saveInputs", {
+                method: "POST",
+                body: JSON.stringify(data),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.message);
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                });
+        });
+
+    </script>
 </body>
 
 </html>
